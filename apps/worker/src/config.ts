@@ -8,7 +8,7 @@ const workerEnvSchema = baseEnvSchema.extend({
   BOX_ID_START: z.coerce.number().int().min(0).default(0),
   CACHE_DIR: z.string().default('.cache/tests'),
   META_DIR: z.string().default(tmpdir()),
-  OUTPUT_LIMIT_KB: z.coerce.number().int().positive().default(65_536),
+  OUTPUT_LIMIT_KB: z.coerce.number().int().positive().default(16_384),
   RECONCILE_INTERVAL_MS: z.coerce.number().int().positive().default(30_000),
   STUCK_TIMEOUT_MS: z.coerce.number().int().positive().default(120_000),
   MAX_ATTEMPTS: z.coerce.number().int().positive().default(3),
