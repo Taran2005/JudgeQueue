@@ -1,0 +1,7 @@
+{
+  "name": "@judgequeue/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@judgequeue/shared": "*", "express": "^5.1.0", "zod": "^3.23.8" }
+}

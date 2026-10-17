@@ -1,0 +1,7 @@
+{
+  "name": "@judgequeue/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@judgequeue/shared": "*", "bullmq": "^5.12.0", "pg": "^8.13.0", "pino": "^9.4.0", "zod": "^3.23.8" }
+}
