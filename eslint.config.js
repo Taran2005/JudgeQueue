@@ -10,6 +10,10 @@ export default tseslint.config(
       eqeqeq: 'error',
       'no-console': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
     },
   },
   { files: ['scripts/**'], rules: { 'no-console': 'off' } },
